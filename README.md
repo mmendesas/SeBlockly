@@ -5,6 +5,8 @@ SeBlockly is a **web-based visual programming editor for [Selenium](http://www.s
 
 SeBlockly is based on [Blockly](https://developers.google.com/blockly/), the web-based, graphical programming editor. Provide static type language blocks and code generators for Selenium programming.
 
+View [SeBlockly](http://sednemm.github.io/SeBlockly) web site
+
 ### Features
 
 * Programming Selenium Java with visually drag and drop code blocks
@@ -17,9 +19,9 @@ SeBlockly is a web tool. You can give it a try at :
 
 ### Run locally on your web browser
 
-If you want to install it locally. Get code from github and open `blockly/apps/blocklyduino/index.html` in your browser.
+If you want to install it locally. Get code from github and open `index.html` in your browser.
 
-The preffered way is to put the SeBlockly/web folder into a web server and open the url like localhost/public/blockly/apps/seblockly/index.html for use.
+The preffered way is to put the SeBlockly/web folder into a web server and open the url like localhost/public/index.html for use.
 
 ### Usage
 
@@ -29,7 +31,7 @@ The preffered way is to put the SeBlockly/web folder into a web server and open 
 ### ChangeLog
 
 ### Authors and Contributors
-Marcio Mendes (@gasolin) .
+Marcio Mendes (@sednemm) .
 
 Thanks Neil Fraser, Q.Neutron from Blockly https://developers.google.com/blockly/
 Thanks Fred Lin (gasolin) the project is inspired by your [BlocklyDuino](https://github.com/BlocklyDuino/BlocklyDuino) project
