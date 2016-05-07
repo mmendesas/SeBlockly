@@ -3,9 +3,7 @@
 ### Welcome to SeBlockly
 SeBlockly is a **web-based visual programming editor for [Selenium](http://www.seleniumhq.org/)**.
 
-SeBlockly is based on [Blockly](https://developers.google.com/blockly/), the web-based, graphical programming editor. Provide static type language blocks and code generators for Selenium programming.
-
-View [SeBlockly](http://sednemm.github.io/SeBlockly) web site
+SeBlockly is based on **[Blockly](https://developers.google.com/blockly/)**, the web-based, graphical programming editor. Provide static type language blocks and code generators for Selenium programming.
 
 ### Features
 
@@ -15,13 +13,7 @@ View [SeBlockly](http://sednemm.github.io/SeBlockly) web site
 
 ### Demo
 
-SeBlockly is a web tool. You can give it a try at :
-
-### Run locally on your web browser
-
-If you want to install it locally. Get code from github and open `index.html` in your browser.
-
-The preffered way is to put the SeBlockly/web folder into a web server and open the url like localhost/public/index.html for use.
+SeBlockly is a web tool. You can give it a try at : **[SeBlockly](http://sednemm.github.io/SeBlockly)**
 
 ### Usage
 
