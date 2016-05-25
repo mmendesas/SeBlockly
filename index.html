@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -9,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+	  
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -20,7 +19,7 @@
   <body>
     <header>
       <div class="inner">
-        <h1>Seblockly123</h1>
+        <h1>SeBlockly</h1>
         <h2></h2>
         <a href="https://github.com/sednemm/SeBlockly" class="button"><small>View project on</small> GitHub</a>
       </div>
@@ -30,19 +29,23 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			  
+			  
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to SeBlockly Playground!</h3>
+			<p>	SeBlockly Playground is a place where you can test all available SeBlockly blocks.
+			<br/>Feel free to create and export your own selenium code for a java file and after finishing the build process run your own web automation using selenium.
+			<br/>Have fun with blocks and create your own automation scripts!</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+		<iframe src="index_seblockly.html" width="100%" height="500"></iframe>
+			<h3><a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors
+			</h3>
+			<p>
+				
+			</p>
+			<h3><a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+			<p>Having trouble with SeBlockly? Don't be afraid to tell me about your experience and questions! 
+			<br/></br/>Marcio Mendes(<a href="https://github.com/sednemm" class="user-mention">@sednemm) </p>
         </section>
 
         <aside id="sidebar">
@@ -65,362 +68,3 @@
   
   </body>
 </html>
-=======
-	<head>
-		<meta charset="utf-8">
-		<title>SeBlockly</title>
-		<link rel="stylesheet" href="css/style.css">
-		<!-- import required blockly and blocks -->
-		<script type="text/javascript" src="blockly/blockly_compressed.js"></script>
-		<script type="text/javascript" src="blockly/blocks_compressed.js"></script>	
-		<!-- import custom blocks (Selenium) -->
-		<script type="text/javascript" src="blockly/selenium_block.js"></script>	
-		<!-- import code -->
-		<script type="text/javascript" src="blockly/javascript_compressed.js"></script>	
-		<!-- import code - custom and helper -->
-		<script type="text/javascript" src="blockly/java_compressed.js"></script>	
-		<script type="text/javascript" src="blockly/selenium.js"></script>	
-		<script type="text/javascript" src="js/code.js"></script>
-		<!-- import message language -->
-		<script type="text/javascript" src="blockly/msg/js/en.js"></script>
-		
-		<script type="text/javascript" src="js/Blob.js"></script>
-		<script type="text/javascript" src="js/spin.js"></script>
-		<script type="text/javascript" src="js/FileSaver.min.js"></script>
-		<script type="text/javascript" src="js/file_helper.js"></script>
-		
-	</head>
-	<body>
-		<table height="100%" width="100%">
-		<tr>
-			<td>
-				<h1><a href="https://github.com/gasolin/BlocklyDuino/wiki">SeBlockly</a> &gt; web-based visual programming editor for <strong>Selenium</strong></h1>
-			</td>
-		</tr>
-		<tr>
-			<td colspan=2>
-				<table width="100%">
-					<tr id="tabRow" height="1em">
-						<td id="tab_blocks" class="tabon">Blocks</td>
-						<td class="tabmin">&nbsp;</td>
-						<td id="tab_selenium" class="taboff">Selenium</td>
-						<td class="tabmin">&nbsp;</td>
-						
-						<td id="tab_xml" class="taboff">XML</td>
-						<td class="tabmax">					
-							<button onclick="saveCode()">Save Selenium Code</button>
-							<button onclick="save()">Save XML</button>
-							<button id="fakeload">Load XML</button>
-							<input type="file" id="load" style="display: none;"/>
-							<button id="trashButton" class="notext" title="...">
-								<img src='blockly/media/1x1.gif' class="trash icon21">
-							</button>
-							<input type="file" id="load" style="display: none;"/>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-			<tr>
-				<td height="99%" id="content_area"></td>
-			</tr>
-		</table>
-		<div id="content_blocks" class="content"></div>
-		<textarea id="content_selenium" class="content" readonly wrap="off"></textarea>
-		<textarea id="content_javascript" class="content" readonly wrap="off"></textarea>
-		<textarea id="content_xml" class="content" wrap="off"></textarea>
-		<xml id="toolbox" style="display: none">   
-			<category id="catLogic" name="Logic" colour="210">
-				<block type="controls_if"></block>
-				<block type="logic_compare"></block>
-				<block type="logic_operation"></block>
-				<block type="logic_negate"></block>
-				<block type="logic_boolean"></block>
-				<block type="logic_null"></block>
-				<block type="logic_ternary"></block>
-			</category>
-			<category id="catLoops" name="Loops" colour="120">
-				<block type="controls_repeat_ext">
-					<value name="TIMES">
-						<shadow type="math_number">
-							<field name="NUM">10</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="controls_whileUntil"></block>
-				<block type="controls_for">
-					<value name="FROM">
-						<shadow type="math_number">
-							<field name="NUM">1</field>
-						</shadow>
-					</value>
-					<value name="TO">
-						<shadow type="math_number">
-							<field name="NUM">10</field>
-						</shadow>
-					</value>
-					<value name="BY">
-						<shadow type="math_number">
-							<field name="NUM">1</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="controls_forEach"></block>
-				<block type="controls_flow_statements"></block>
-			</category>
-			<category id="catText" name="Text" colour="160">
-				<block type="text"></block>
-				<block type="text_join"></block>
-				<block type="text_append">
-					<value name="TEXT">
-						<shadow type="text"></shadow>
-					</value>
-				</block>
-				<block type="text_length">
-					<value name="VALUE">
-						<shadow type="text">
-							<field name="TEXT">abc</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="text_isEmpty">
-					<value name="VALUE">
-						<shadow type="text">
-							<field name="TEXT"></field>
-						</shadow>
-					</value>
-				</block>
-				<block type="text_indexOf">
-					<value name="VALUE">
-						<block type="variables_get">
-							<field name="VAR">text</field>
-						</block>
-					</value>
-					<value name="FIND">
-						<shadow type="text">
-							<field name="TEXT">abc</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="text_charAt">
-					<value name="VALUE">
-						<block type="variables_get">
-							<field name="VAR">text</field>
-						</block>
-					</value>
-				</block>
-				<block type="text_getSubstring">
-					<value name="STRING">
-						<block type="variables_get">
-							<field name="VAR">text</field>
-						</block>
-					</value>
-				</block>
-				<block type="text_changeCase">
-					<value name="TEXT">
-						<shadow type="text">
-							<field name="TEXT">abc</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="text_trim">
-					<value name="TEXT">
-						<shadow type="text">
-							<field name="TEXT">abc</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="text_print">
-					<value name="TEXT">
-						<shadow type="text">
-							<field name="TEXT">abc</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="text_prompt_ext">
-					<value name="TEXT">
-						<shadow type="text">
-							<field name="TEXT">abc</field>
-						</shadow>
-					</value>
-				</block>
-			</category>
-			<category id="catMath" name="Math" colour="230">
-				<block type="math_number"></block>
-				<block type="math_arithmetic">
-					<value name="A">
-						<shadow type="math_number">
-							<field name="NUM">1</field>
-						</shadow>
-					</value>
-					<value name="B">
-						<shadow type="math_number">
-							<field name="NUM">1</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="math_single">
-					<value name="NUM">
-						<shadow type="math_number">
-							<field name="NUM">9</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="math_trig">
-					<value name="NUM">
-						<shadow type="math_number">
-							<field name="NUM">45</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="math_constant"></block>
-				<block type="math_number_property">
-					<value name="NUMBER_TO_CHECK">
-						<shadow type="math_number">
-							<field name="NUM">0</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="math_change">
-					<value name="DELTA">
-						<shadow type="math_number">
-							<field name="NUM">1</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="math_round">
-					<value name="NUM">
-						<shadow type="math_number">
-							<field name="NUM">3.1</field>
-						</shadow>
-					</value>
-				</block>      
-				<block type="math_modulo">
-					<value name="DIVIDEND">
-						<shadow type="math_number">
-							<field name="NUM">64</field>
-						</shadow>
-					</value>
-					<value name="DIVISOR">
-						<shadow type="math_number">
-							<field name="NUM">10</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="math_constrain">
-					<value name="VALUE">
-						<shadow type="math_number">
-							<field name="NUM">50</field>
-						</shadow>
-					</value>
-					<value name="LOW">
-						<shadow type="math_number">
-							<field name="NUM">1</field>
-						</shadow>
-					</value>
-					<value name="HIGH">
-						<shadow type="math_number">
-							<field name="NUM">100</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="math_random_int">
-					<value name="FROM">
-						<shadow type="math_number">
-							<field name="NUM">1</field>
-						</shadow>
-					</value>
-					<value name="TO">
-						<shadow type="math_number">
-							<field name="NUM">100</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="math_random_float"></block>
-			</category>
-			<category id="catLists" name="Lists" colour="260">
-				<block type="lists_create_with">
-					<mutation items="0"></mutation>
-				</block>
-				<block type="lists_create_with"></block>
-				<block type="lists_repeat">
-					<value name="NUM">
-						<shadow type="math_number">
-							<field name="NUM">5</field>
-						</shadow>
-					</value>
-				</block>
-				<block type="lists_length"></block>
-				<block type="lists_isEmpty"></block>
-				<block type="lists_indexOf">
-					<value name="VALUE">
-						<block type="variables_get">
-							<field name="VAR">list</field>
-						</block>
-					</value>
-				</block>
-				<block type="lists_getIndex">
-					<value name="VALUE">
-						<block type="variables_get">
-							<field name="VAR">list</field>
-						</block>
-					</value>
-				</block>
-				<block type="lists_setIndex">
-					<value name="LIST">
-						<block type="variables_get">
-							<field name="VAR">list</field>
-						</block>
-					</value>
-				</block>
-				<block type="lists_getSublist">
-					<value name="LIST">
-						<block type="variables_get">
-							<field name="VAR">list</field>
-						</block>
-					</value>
-				</block>
-				<block type="lists_split">
-					<value name="DELIM">
-						<shadow type="text">
-							<field name="TEXT">,</field>
-						</shadow>
-					</value>
-				</block>
-			</category>
-			<sep></sep>
-			<category id="catVariables" colour="330" custom="VARIABLE" name="Variables"></category>
-			<sep></sep>
-			<category id="catSelenium" name="Selenium" colour="#4C0099">
-				<category id="catGiven" name="Given" colour="150">
-
-				</category>
-				<category id="catWhen" name="When" colour="200">
-					<block type="selenium_check"></block>
-					<block type="selenium_clear"></block>
-					<block type="selenium_click"></block>
-					<block type="selenium_contextclick"></block>
-					<block type="selenium_draganddrop"></block>
-					<block type="selenium_fill"></block>
-					<block type="selenium_hover"></block>
-					<block type="selenium_scroll"></block>
-					<block type="selenium_select"></block>	
-				</category>
-				<category id="catThen" name="Then (State)" colour="250">
-					<block type="selenium_ispresent"></block>
-					<block type="selenium_isdisplayed"></block>
-					<block type="selenium_isenabled"></block>		
-				</category>
-				<category id="catThenValue" name="Then (Value)" colour="300">
-					<block type="selenium_valuehastext"></block>
-					<block type="selenium_valuehastextlength"></block>
-					<block type="selenium_combooption"></block>
-					<block type="selenium_valuehasattribute"></block>
-					<block type="selenium_valuehascssattribute"></block>
-					<block type="selenium_valuehaselementscount"></block>			
-				</category>
-			</category>
-		</xml>
-	</body>
-</html>
->>>>>>> refs/remotes/origin/master
