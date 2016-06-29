@@ -454,7 +454,7 @@ Blockly.Blocks['selenium_valuehasattribute'] = {
         .setCheck("String");
     this.setInputsInline(true);
     this.setOutput(true, "Boolean");
-    this.setColour(200);
+    this.setColour(green_color);
     this.setTooltip('');
     this.setHelpUrl('https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#zrkg8o');
   }
@@ -483,3 +483,59 @@ Blockly.Blocks['selenium_valuehaselementscount'] = {
 };
 
 //endregion
+
+
+/**
+* region GIVEN
+*/
+
+Blockly.Blocks['selenium_openurl'] = {
+  init: function() {
+    this.appendValueInput("url")
+        .setCheck("String")
+        .appendField("{Given} user navigates to");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(red_color);
+    this.setTooltip('');
+    this.setHelpUrl('https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#v9qzeb');
+  }
+};
+
+
+Blockly.Blocks['selenium_closewebbrowser'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("{Given} user closes the web browser");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(red_color);
+    this.setTooltip('');
+    this.setHelpUrl('https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#gcuzur');
+  }
+};
+
+//endregion
+
+
+Blockly.Blocks['selenium_startscript'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Start new script with name:");
+    this.appendValueInput("NAME")
+        .setCheck(null);
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField("using the")
+        .appendField(new Blockly.FieldDropdown([["firefox", "FIREFOX"], ["chrome", "CHROME"], ["internet_explorer", "IEXPLORER"]]), "SELECTBROWSER")
+        .appendField("browser");
+    this.appendStatementInput("SCRIPT")
+        .setCheck(null);
+    this.setInputsInline(true);
+    this.setColour(30);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};

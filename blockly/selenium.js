@@ -60,6 +60,12 @@ var NUM_COMPARISON = {
 };
 
 
+var STR_BROWSER_INST = {
+	'FIREFOX': 'new FirefoxDriver();',	
+	'CHROME': 'new ChromeDriver();',	
+	'IEXPLORER': 'new InternetExplorerDriver();'	
+};
+
 
 //methods implementation
 
@@ -320,3 +326,67 @@ Blockly.Java['selenium_valuehaselementscount'] = function(block) {
 	
   return [code, Blockly.Java.ORDER_NONE];
 };
+
+
+Blockly.Java['selenium_openurl'] = function(block) {
+  var value_url = Blockly.Java.valueToCode(block, 'url', Blockly.Java.ORDER_ATOMIC);  
+  var code = 'driver.navigate().to("' + value_url + '");\n';
+  return code;
+};
+
+
+Blockly.Java['selenium_closewebbrowser'] = function(block) {  
+  var code = 'driver.quit();\n';
+  return code;
+};
+
+
+Blockly.Java['selenium_startscript'] = function(block) {
+  var value_name = Blockly.Java.valueToCode(block, 'NAME', Blockly.Java.ORDER_ATOMIC);
+  var dropdown_selectbrowser = STR_BROWSER_INST[block.getFieldValue('SELECTBROWSER')];
+  var statements_script = Blockly.Java.statementToCode(block, 'SCRIPT');
+  // TODO: Assemble JavaScript into code variable.
+
+  value_name = value_name.replace("\"", "");
+  if(value_name == "") value_name = "JavaSeleniumWebdriver";
+	
+  var code = 
+	'package com.yourpackage.example;\n\n'+
+	'import java.util.regex.Pattern;\n'+
+	'import java.util.concurrent.TimeUnit;\n'+
+	'import org.junit.*;\n'+
+	'import static org.junit.Assert.*;\n'+
+	'import static org.hamcrest.CoreMatchers.*;\n'+
+	'import org.openqa.selenium.*;\n'+	
+	'import org.openqa.selenium.support.ui.Select;\n\n\n'+
+
+	'public class '+ value_name +' {\n'+
+	'	private WebDriver driver;\n'+
+	'	private String baseUrl;\n'+
+	'	private boolean acceptNextAlert = true;\n'+
+	'	private StringBuffer verificationErrors = new StringBuffer();\n\n'+
+	
+	'	@Before\n'+
+	'  	public void setUp() throws Exception {\n'+
+	'		driver = '+ dropdown_selectbrowser + '\n'+
+	'		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);\n'+
+	'	}\n'+
+
+	'	@Test\n'+
+	'	public void testJavaSeleniumWebdriver() throws Exception {\n'
+			+ statements_script +
+	'	}\n\n'+
+	  
+	'	@After\n'+
+	'	public void tearDown() throws Exception {\n'+
+	'		driver.quit();\n'+
+	'    	String verificationErrorString = verificationErrors.toString();\n'+
+	'		if (!"".equals(verificationErrorString)) {\n'+
+	'			fail(verificationErrorString);\n'+
+	'		}\n'+
+	'	}\n'+
+	'}\n';
+  
+  return code;
+};
+

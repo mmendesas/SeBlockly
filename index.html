@@ -325,11 +325,15 @@
 			<sep></sep>
 			<category id="catVariables" colour="330" custom="VARIABLE" name="Variables"></category>
 			<sep></sep>
-			<category id="catSelenium" name="Selenium" colour="#4C0099">
-				<category id="catGiven" name="Given" colour="150">
-
+			<category id="catSelenium" name="Selenium" colour="#990000">
+				<category id="catStart" name="Start" colour="#990598">
+					<block type="selenium_startscript"></block>
 				</category>
-				<category id="catWhen" name="When" colour="200">
+				<category id="catGiven" name="Given" colour="#990000">
+					<block type="selenium_openurl"></block>
+					<block type="selenium_closewebbrowser"></block>
+				</category>
+				<category id="catWhen" name="When" colour="#000099">
 					<block type="selenium_check"></block>
 					<block type="selenium_clear"></block>
 					<block type="selenium_click"></block>
@@ -340,12 +344,12 @@
 					<block type="selenium_scroll"></block>
 					<block type="selenium_select"></block>	
 				</category>
-				<category id="catThen" name="Then (State)" colour="250">
+				<category id="catThen" name="Then (State)" colour="#FF8000">
 					<block type="selenium_ispresent"></block>
 					<block type="selenium_isdisplayed"></block>
 					<block type="selenium_isenabled"></block>		
 				</category>
-				<category id="catThenValue" name="Then (Value)" colour="300">
+				<category id="catThenValue" name="Then (Value)" colour="#009900">
 					<block type="selenium_valuehastext"></block>
 					<block type="selenium_valuehastextlength"></block>
 					<block type="selenium_combooption"></block>
